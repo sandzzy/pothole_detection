@@ -1,0 +1,8 @@
+severity_thresholds:      
+  medium: 0.005           
+  high: 0.02              
+severity_weights:
+  low: 1.0
+  medium: 2.5
+  high: 5.0
+health_decay_k: 1.0     

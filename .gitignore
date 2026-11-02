@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data & outputs (too large for git)
+data/*
+!data/.gitkeep
+!data/data.yaml
+runs/
+outputs/
+*.pt
+*.onnx
+*.mp4
+*.avi
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
