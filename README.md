@@ -155,17 +155,23 @@ outputs/test_images/
 |---|---|---|---|---|---|
 | YOLOv8n | 50 | 0.6461 | 0.4745 | 0.5242 | 0.2081 |
 
-```markdown
-![Training curves](runs\eval\test\confusion_matrix_normalized.png)
-![Confusion matrix](runs\pothole\yolov8n\results.png)
-![Precision Cureve](runs/eval/test/BoxPR_curve.png)
-```
+## Model Evaluation
 
-```markdown
-![Image 1](runs\detect\runs\eval\test\val_batch0_pred.jpg)
-![Image 2](runs\detect\runs\eval\test\val_batch1_pred.jpg)
-![Image 3](runs/detect/runs/eval/test/val_batch2_pred.jpg)
-```
+### Evaluation Metrics
+
+![Confusion Matrix](runs/eval/test/confusion_matrix_normalized.png)
+
+![Training Results](runs/pothole/yolov8n/results.png)
+
+![Precision Recall Curve](runs/eval/test/BoxPR_curve.png)
+
+### Prediction Results
+
+![Prediction Image 1](runs/detect/runs/eval/test/val_batch0_pred.jpg)
+
+![Prediction Image 2](runs/detect/runs/eval/test/val_batch1_pred.jpg)
+
+![Prediction Image 3](runs/detect/runs/eval/test/val_batch2_pred.jpg)
 
 ## ⚠️ Limitations
 
