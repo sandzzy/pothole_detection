@@ -1,0 +1,62 @@
+{
+  "frames_analysed": 300,
+  "frames_with_potholes": 53,
+  "pct_frames_with_potholes": 17.7,
+  "total_detections": 64,
+  "avg_detections_per_frame": 0.213,
+  "mean_confidence": 0.772,
+  "severity_counts": {
+    "low": 6,
+    "medium": 41,
+    "high": 17
+  },
+  "overall_health_score": 62.0,
+  "overall_rating": "Fair",
+  "worst_segments": [
+    {
+      "sequence": "demo",
+      "segment": 3,
+      "start_frame": 90,
+      "end_frame": 119,
+      "n_potholes": 19,
+      "health_score": 12.5,
+      "rating": "Critical"
+    },
+    {
+      "sequence": "demo",
+      "segment": 4,
+      "start_frame": 120,
+      "end_frame": 149,
+      "n_potholes": 17,
+      "health_score": 18.6,
+      "rating": "Critical"
+    },
+    {
+      "sequence": "demo",
+      "segment": 1,
+      "start_frame": 30,
+      "end_frame": 59,
+      "n_potholes": 7,
+      "health_score": 47.2,
+      "rating": "Poor"
+    },
+    {
+      "sequence": "demo",
+      "segment": 6,
+      "start_frame": 180,
+      "end_frame": 209,
+      "n_potholes": 5,
+      "health_score": 55.8,
+      "rating": "Poor"
+    },
+    {
+      "sequence": "demo",
+      "segment": 5,
+      "start_frame": 150,
+      "end_frame": 179,
+      "n_potholes": 6,
+      "health_score": 63.8,
+      "rating": "Fair"
+    }
+  ]
+}

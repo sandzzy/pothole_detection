@@ -1,0 +1,62 @@
+{
+  "frames_analysed": 152,
+  "frames_with_potholes": 150,
+  "pct_frames_with_potholes": 98.7,
+  "total_detections": 613,
+  "avg_detections_per_frame": 4.033,
+  "mean_confidence": 0.547,
+  "severity_counts": {
+    "low": 54,
+    "medium": 225,
+    "high": 334
+  },
+  "overall_health_score": 0.0,
+  "overall_rating": "Critical",
+  "worst_segments": [
+    {
+      "sequence": "images",
+      "segment": 0,
+      "start_frame": 0,
+      "end_frame": 29,
+      "n_potholes": 149,
+      "health_score": 0.0,
+      "rating": "Critical"
+    },
+    {
+      "sequence": "images",
+      "segment": 1,
+      "start_frame": 30,
+      "end_frame": 59,
+      "n_potholes": 115,
+      "health_score": 0.0,
+      "rating": "Critical"
+    },
+    {
+      "sequence": "images",
+      "segment": 2,
+      "start_frame": 60,
+      "end_frame": 89,
+      "n_potholes": 162,
+      "health_score": 0.0,
+      "rating": "Critical"
+    },
+    {
+      "sequence": "images",
+      "segment": 3,
+      "start_frame": 90,
+      "end_frame": 119,
+      "n_potholes": 103,
+      "health_score": 0.0,
+      "rating": "Critical"
+    },
+    {
+      "sequence": "images",
+      "segment": 4,
+      "start_frame": 120,
+      "end_frame": 149,
+      "n_potholes": 80,
+      "health_score": 0.0,
+      "rating": "Critical"
+    }
+  ]
+}

@@ -10,8 +10,6 @@ venv/
 data/*
 !data/.gitkeep
 !data/data.yaml
-runs/
-outputs/
 *.pt
 *.onnx
 *.mp4
