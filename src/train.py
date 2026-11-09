@@ -27,7 +27,7 @@ def main() -> None:
     model = YOLO(a.model)
     model.train(data=a.data, epochs=a.epochs, imgsz=a.imgsz, batch=a.batch, device=a.device,
                 workers=a.workers, patience=a.patience, seed=a.seed,
-                project=a.project, name=a.name, exist_ok=True,
+                project=str(Path(a.project).resolve()), name=a.name, exist_ok=True,
                 hsv_h=0.015, hsv_s=0.6, hsv_v=0.4, degrees=5.0, translate=0.1,
                 scale=0.4, fliplr=0.5, mosaic=1.0)
 

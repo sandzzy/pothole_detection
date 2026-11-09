@@ -113,13 +113,13 @@ If your dataset was exported with its own `data.yaml` (Roboflow does this), just
 
 ### 1. Train
 ```bash
-python -m src.train --data data/data.yaml --model yolov8n.pt --epochs 50 --batch 16 --device 0
+python -m src.train --data data/pothole/data.yaml --epochs 50 --device 0
 ```
 Best weights are saved to `runs/pothole/yolov8n/weights/best.pt`. Training curves, confusion matrix and PR curves are saved in the same folder.
 
 ### 2. Evaluate
 ```bash
-python -m src.evaluate --weights runs/pothole/yolov8n/weights/best.pt --split test
+python -m src.evaluate --weights runs/pothole/yolov8n/weights/best.pt --data data/pothole/data.yaml --split test
 ```
 Writes `outputs/metrics.json` with precision, recall, mAP@0.5 and mAP@0.5:0.95.
 
@@ -137,7 +137,7 @@ python -m src.detect --weights runs/pothole/yolov8n/weights/best.pt \
 Output folder:
 
 ```
-outputs/road/
+outputs/test_images/
 ├── annotated/                 # images / video with boxes drawn
 ├── detections.csv             # one row per detected pothole
 ├── frames.csv                 # one row per processed frame
@@ -150,17 +150,21 @@ outputs/road/
 
 ## 📊 Results
 
-> ⚠️ Fill this section with **your own** numbers after training — don't leave placeholders in the final submission.
 
 | Model | Epochs | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
 |---|---|---|---|---|---|
-| YOLOv8n | _ | _ | _ | _ | _ |
-
-Add screenshots from `runs/pothole/.../` (`results.png`, `confusion_matrix.png`) and `outputs/.../analytics/charts/`, e.g.:
+| YOLOv8n | 50 | 0.6461 | 0.4745 | 0.5242 | 0.2081 |
 
 ```markdown
-![Training curves](docs/results.png)
-![Road health](docs/road_health_by_segment.png)
+![Training curves](runs\eval\test\confusion_matrix_normalized.png)
+![Confusion matrix](runs\pothole\yolov8n\results.png)
+![Precision Cureve](runs/eval/test/BoxPR_curve.png)
+```
+
+```markdown
+![Image 1](runs\detect\runs\eval\test\val_batch0_pred.jpg)
+![Image 2](runs\detect\runs\eval\test\val_batch1_pred.jpg)
+![Image 3](runs/detect/runs/eval/test/val_batch2_pred.jpg)
 ```
 
 ## ⚠️ Limitations
@@ -183,12 +187,3 @@ Add screenshots from `runs/pothole/.../` (`results.png`, `confusion_matrix.png`)
 ```bash
 pytest -q
 ```
-
-## 🙏 Acknowledgements
-
-- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
-- Dataset: _add dataset name, author and link here_
-
-## 📄 License
-
-MIT — see [LICENSE](LICENSE). Note that Ultralytics YOLOv8 is licensed under AGPL-3.0; check its terms if you plan to redistribute or deploy this work commercially.

@@ -18,7 +18,7 @@ def main() -> None:
     from ultralytics import YOLO
 
     metrics = YOLO(a.weights).val(data=a.data, split=a.split, imgsz=a.imgsz, device=a.device,
-                                  project="runs/eval", name=a.split, exist_ok=True)
+                                  project=str(Path("runs/eval").resolve()), name=a.split, exist_ok=True)
     result = {
         "split": a.split,
         "precision": round(float(metrics.box.mp), 4),
