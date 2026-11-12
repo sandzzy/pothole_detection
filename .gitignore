@@ -7,9 +7,6 @@ venv/
 .ipynb_checkpoints/
 
 # Data & outputs (too large for git)
-data/*
-!data/.gitkeep
-!data/data.yaml
 *.pt
 *.onnx
 *.mp4
